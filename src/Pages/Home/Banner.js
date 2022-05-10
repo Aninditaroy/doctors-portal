@@ -2,7 +2,7 @@ import React from 'react';
 import chair from './../../assets/images/chair.png';
 const Banner = () => {
     return (
-        <div className="hero my-24 px-12" >
+        <div className="hero my-24" >
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <img src={chair} className="max-w-sm rounded-lg shadow-2xl w-full" alt='' />
                 <div>
