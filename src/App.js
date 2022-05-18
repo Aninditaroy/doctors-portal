@@ -15,7 +15,7 @@ function App() {
         <Route path='/about' element={<About />}></Route>
         <Route path='/login' element={<Login/>}></Route>
       </Routes>
-      {/* 71-6 == 7:38 min */}
+      {/* 71-7 == 9:55 min */}
     </>
   );
 }
