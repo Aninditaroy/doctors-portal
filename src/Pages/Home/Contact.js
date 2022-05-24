@@ -12,9 +12,9 @@ const Contact = () => {
                     <h2 className='text-4xl text-white'>Stay connected with us</h2>
                 </div>
             
-            <input type="text" placeholder="Email Address" class="input w-full max-w-xs my-2" />
-            <input type="text" placeholder="Subject" class="input w-full max-w-xs my-2" />
-            <textarea type="textarea" placeholder="Your message" class="textarea textarea-bordered w-full max-w-xs my-2"></textarea>
+            <input type="text" placeholder="Email Address" className="input w-full max-w-xs my-2" />
+            <input type="text" placeholder="Subject" className="input w-full max-w-xs my-2" />
+            <textarea type="textarea" placeholder="Your message" className="textarea textarea-bordered w-full max-w-xs my-2"></textarea>
             <PrimaryButton>Submit</PrimaryButton>
         </div>
         </section>
