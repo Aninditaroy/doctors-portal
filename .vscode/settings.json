@@ -1,4 +1,10 @@
 {
     "eslint.codeActionsOnSave.mode": "all",
-    "eslint.alwaysShowStatus": false
+    "eslint.alwaysShowStatus": false,
+    "less.lint.emptyRules": "error",
+    "problems.decorations.enabled": true,
+    "outline.problems.colors": true,
+    "outline.problems.enabled": false,
+    "editor.codeLensFontFamily": "",
+    "editor.fontSize": 16
 }
