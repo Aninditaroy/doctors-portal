@@ -7,7 +7,7 @@ import { toDate } from 'date-fns';
 
 const AddDoctor = () => {
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
-    const { data: services, isLoading } = useQuery('services', () => fetch('http://localhost:5000/service').then(res => res.json()))
+    const { data: services, isLoading } = useQuery('services', () => fetch('https://vast-oasis-37632.herokuapp.com/service').then(res => res.json()))
 
     const imageStorageKey = '897f17e2399bad4621116b5130fd571a';
 
@@ -39,7 +39,7 @@ const AddDoctor = () => {
                         img: img,
                     }
                     //send to database
-                    fetch('http://localhost:5000/doctor', {
+                    fetch('https://vast-oasis-37632.herokuapp.com/doctor', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json',

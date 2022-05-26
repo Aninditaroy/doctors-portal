@@ -3,6 +3,7 @@ import { format } from 'date-fns';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import { toast } from 'react-toastify';
+
 const BookingModal = ({ date, treatment, setTreatment, refetch }) => {
     const { _id, name, slots, price } = treatment;
     const [user, loading, error] = useAuthState(auth);
@@ -23,6 +24,7 @@ const BookingModal = ({ date, treatment, setTreatment, refetch }) => {
         }
 
         fetch('https://vast-oasis-37632.herokuapp.com/booking', {
+
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -37,10 +39,9 @@ const BookingModal = ({ date, treatment, setTreatment, refetch }) => {
                 else {
                     toast.error(`Already have and appointment on ${data.booking?.date} at ${data.booking?.slot}`)
                 }
-                refetch();
                 setTreatment(null);
+                refetch();
             });
-
     }
 
     return (
